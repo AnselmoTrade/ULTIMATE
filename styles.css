@@ -79,6 +79,11 @@ a:hover {
     align-items: center;
     padding: 2rem 1rem;
   }
+  .titulo {
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 
 .presentacion h2 {
