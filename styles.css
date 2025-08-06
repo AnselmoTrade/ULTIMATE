@@ -73,6 +73,13 @@ a:hover {
 .presentacion {
   flex: 1;
 }
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+}
 
 .presentacion h2 {
   font-size: 45px;
