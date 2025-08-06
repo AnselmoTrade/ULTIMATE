@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    /* Reset */
+
+</style>
+<body>
+  <header>
+    <h1>MI PORTAFOLIO</h1>
+
+    <!-- Ícono Hamburguesa -->
+    <div class="menu-icon" id="menu-icon">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Menú Navegación -->
+    <nav id="nav">
+      <ul>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#mostrar">Base de Datos</a></li>
+        <li><a onclick="mostrarFormulario()">Iniciar Sesión</a></li>
+        <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenedor">
+    <section class="presentacion" id="Home">
+      <h2>ANSELMO ALMERCO</h2>
+      <p>
+        Bienvenido a mi portafolio personal. Aquí encontrarás información sobre mis proyectos,
+        habilidades y cómo contactarme. Desarrollador web con experiencia en React y Next.js.
+        Apasionado por el diseño y la tecnología. Siempre aprendiendo y mejorando.
+      </p>
+      <div class="botones">
+        <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+        <a href="#" class="btn">Contactame</a>
+      </div>
+    </section>
+
+    <section class="imagen">
+      <img src="img/anselmo.jpg" alt="Pantalla con código">
+    </section>
+  </main>
+  <section class="proyectos" href="proyectos" id="proyectos">
+  <h2>Mis Proyectos</h2>
+  <div class="grid-proyectos">
+    <div class="proyecto-card">
+      <h3>Tienda Virtual</h3>
+      <p>Aplicación web desarrollada en Java con sistema de carrito de compras.</p>
+      <a href="#">Ver Proyecto</a>
+    </div>
+    <div class="proyecto-card">
+      <h3>App de Idiomas</h3>
+      <p>App educativa para aprender inglés, francés y portugués. Java y JavaScript.</p>
+      <a href="#">Ver Proyecto</a>
+    </div>
+    <div class="proyecto-card">
+      <h3>Gestor de Notas</h3>
+      <p>Sistema para que los docentes suban y consulten notas fácilmente.</p>
+      <a href="#">Ver Proyecto</a>
+    </div>
+    <div class="proyecto-card">
+      <h3>Gestor de Notas</h3>
+      <p>Sistema para que los docentes suban y consulten notas fácilmente.</p>
+      <a href="#">Ver Proyecto</a>
+    </div>
+    <div class="proyecto-card">
+      <h3>Gestor de Notas</h3>
+      <p>Sistema para que los docentes suban y consulten notas fácilmente.</p>
+      <a href="#">Ver Proyecto</a>
+    </div>
+    <div class="proyecto-card">
+      <h3>Gestor de Notas</h3>
+      <p>Sistema para que los docentes suban y consulten notas fácilmente.</p>
+      <a href="#">Ver Proyecto</a>
+    </div>
+    <div class="proyecto-card">
+      <h3>Gestor de Notas</h3>
+      <p>Sistema para que los docentes suban y consulten notas fácilmente.</p>
+      <a href="#">Ver Proyecto</a>
+    </div>
+    <div class="proyecto-card">
+      <h3>Gestor de Notas</h3>
+      <p>Sistema para que los docentes suban y consulten notas fácilmente.</p>
+      <a href="#">Ver Proyecto</a>
+    </div>
+  </div>
+</section>
+
+<section class="skills-section" href="habilidades" id="habilidades" class="habilidades">
+  <h2 class="skills-title">Mis Habilidades</h2>
+  <div class="skills-container">
+    <div class="skill-card">
+      <h3 class="skill-heading">Frontend</h3>
+      <ul>
+        <li><i class="fa-brands fa-js"></i> JavaScript</li>
+        <li><i class="fa-brands fa-react"></i> React</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3 class="skill-heading">Backend</h3>
+      <ul>
+        <li><i class="fa-brands fa-node"></i> Node.js</li>
+        <li><i class="fa-brands fa-java"></i> Java</li>
+        <li><i class="fa-brands fa-php"></i> PHP</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3 class="skill-heading">Bases de Datos</h3>
+      <ul>
+        <li><i class="fa-solid fa-database"></i> MySQL</li>
+        <li><i class="fa-solid fa-database"></i> PostgreSQL</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="mostrar" href="mostrar" id="mostrar">
+  <h1>Mis Bases de Datos</h1>
+  <p>Consulta las bases de datos que he creado y administrado.</p>
+    <div class="grid-container">
+      <!-- Puedes duplicar este bloque según las semanas -->
+      <!-- Semana 1 -->
+      <div class="card">
+        <iframe src="img/SEMANA1.pdf" title="Semana 1"></iframe>
+        <h2>Semana 1</h2>
+        <p>Introducción</p>
+        <button onclick="descargarPDF('SEMANA1.pdf')">Descargar PDF</button>
+      </div>
+
+      <!-- Semana 2 -->
+      <div class="card">
+        <iframe src="img/SEMANA2.pdf" title="Semana 2"></iframe>
+        <h2>Semana 2</h2>
+        <p>Relaciones</p>
+        <button onclick="descargarPDF('SEMANA2.pdf')">Descargar PDF</button>
+      </div>
+
+      <!-- ... Repite para semanas 3 a 15 -->
+      <div class="card">
+        <iframe src="img/SEMANA3.pdf" title="Semana 3"></iframe>
+        <h2>Semana 3</h2>
+        <p>Consultas SQL</p>
+        <button onclick="descargarPDF('SEMANA3.pdf')">Descargar PDF</button>
+      </div>
+
+      <!-- Ejemplo final (Semana 15) -->
+      <div class="card">
+        <iframe src="img/semana4.png" title="Semana 15"></iframe>
+        <h2>Semana 15</h2>
+        <p>SQL Server</p>
+        <button onclick="descargarPDF('semana4.png')">Descargar PDF</button>
+      </div>
+    </div>
+  <script>
+    function descargarPDF(nombreArchivo) {
+      window.open(`img/${nombreArchivo}`, "_blank");
+    }
+  </script>
+</section>
+<section id="formulario-seccion" style="display: none;">
+  <form onsubmit="return validarLogin(event)">
+    <p>Solo admin</p>
+    <h2>Inicia sesión</h2>
+    <input type="text" id="usuario" placeholder="usuario:admin" required />
+    <input type="password" id="password" placeholder="Contraseña: 1234" required />
+    <button type="submit">Entrar</button>
+  </form>
+</section>
+<script>
+  function mostrarFormulario() {
+    const seccion = document.getElementById("formulario-seccion");
+    seccion.style.display = "block"; // muestra el formulario
+  }
+</script>
+
+
+  <script>
+    // Toggle para el menú hamburguesa
+    const menuIcon = document.getElementById('menu-icon');
+    const nav = document.getElementById('nav');
+
+    menuIcon.addEventListener('click', () => {
+      nav.classList.toggle('activo');
+    });
+  </script>
+</body>
+</html>
